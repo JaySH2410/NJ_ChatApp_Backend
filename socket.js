@@ -4,16 +4,16 @@ const { Redis } = require("ioredis");
 // const PORT = process.env.REACT_APP_REDIS_PORT
 
 const pub = new Redis({
-  host: 'redis-2a59ef7e-jaysh-chat-app.a.aivencloud.com',
-  port: 19311,
-  username: 'default',
-  password: 'AVNS_-1mD7kkWCitc5BsXatn', 
+  host: '',
+  port: '',
+  username: '',
+  password: '', 
 });
 const sub = new Redis({
-  host: 'redis-2a59ef7e-jaysh-chat-app.a.aivencloud.com',
-  port: 19311,
-  username: 'default',
-  password: 'AVNS_-1mD7kkWCitc5BsXatn',
+  host: '',
+  port: '',
+  username: '',
+  password: '',
 });
 class SocketServices {
     constructor() {
