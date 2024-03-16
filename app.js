@@ -2,9 +2,12 @@
 const express = require('express');
 const http = require("http");
 const SocketServices = require("./socket");
+const cors = require('cors');
 
 // Create an Express application
 const app = express();
+app.use(cors());
+
 const server = http.createServer(app);
 const socketServices = new SocketServices();
 
