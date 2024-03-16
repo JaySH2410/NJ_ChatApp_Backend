@@ -4,16 +4,8 @@ const { Redis } = require("ioredis");
 // const PORT = process.env.REACT_APP_REDIS_PORT
 
 const pub = new Redis({
-  host: '',
-  port: '',
-  username: '',
-  password: '', 
 });
 const sub = new Redis({
-  host: '',
-  port: '',
-  username: '',
-  password: '',
 });
 class SocketServices {
     constructor() {
